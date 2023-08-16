@@ -1,25 +1,34 @@
-import logo from './logo.svg';
 import './App.css';
+import { useState } from 'react';
+import About from './components/About.jsx';
+import AgeVerifyModal from './components/AgeVerifyModal';
+import Contact from './components/Contact.jsx';
+import Gallery from './components/Gallery.jsx';
+import WelcomeImage from './components/WelcomeImage.jsx';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const ageVerified = localStorage.getItem('ageVerified') === 'true';
+    const [showModal, setShowModal] = useState(!ageVerified); 
+    const handleModalSuccess = () =>{
+        localStorage.setItem('ageVerified', 'true');
+        setShowModal(false);
+    };
+    const handleModalClose = () => {
+        window.history.go(-1);
+    };
+
+    return (
+        <>
+            {showModal && (
+                <AgeVerifyModal onSuccess={handleModalSuccess} onClose={handleModalClose}/>
+            )}
+            <AgeVerifyModal onSuccess={handleModalSuccess} onClose={handleModalClose}/>
+            <WelcomeImage />
+            <About />
+            <Gallery />
+            <Contact />
+        </>
+    );
 }
 
 export default App;

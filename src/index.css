@@ -1,13 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Poppins'
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+    
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.av-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.av-modal-content {
+    padding: 80px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* ImageSlider.css */
+.image-slider {
+  /* Add any other common styles for the image slider here */
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  overflow: hidden; /* Hide overflow for smooth sliding */
+  position: relative;
+}
+
+.slider-content {
+  display: flex; /* Create a horizontal layout for images */
+  transition: transform 1s ease-in-out; /* Apply smooth sliding transition */
+}
+.slider-image {
+  min-width: 100%; /* Ensure each image takes up the full width of the slider */
+  height: 100%; /* Maintain aspect ratio */
+  object-fit: cover;
+}
+@keyframes fadeInOut {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
 }
