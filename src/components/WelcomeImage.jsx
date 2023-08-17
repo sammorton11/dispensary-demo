@@ -3,8 +3,6 @@ import React from "react";
 export default function WelcomeImage() {
     const dispensary =
         "url(https://www.kccannabis.org/assets/images/Banner_1@2x.webp)";
-    const weed =
-        "url(https://silver-therapeutics.com/wp-content/uploads/2021/11/thiago-patriota-z4DV6PjT8eo-unsplash-scaled.jpg)";
 
     return (
         <div
