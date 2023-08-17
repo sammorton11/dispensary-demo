@@ -1,9 +1,10 @@
 import React from "react";
 import { gallery } from "../data";
+import ShopButton from "./ShopButton";
 
 export default function Gallery() {
   return (
-    <section id="gallery" className="text-green-400 body-font">
+    <section id="gallery" className="text-green-400">
       <div className="px-5 py-10 mx-auto text-center lg:px-40">
         <div className="flex flex-col w-full mb-20">
           <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-white">
@@ -29,6 +30,7 @@ export default function Gallery() {
                   </h1>
                   <p className="leading-relaxed">{item.description}</p>
                 </div>
+                <ShopButton/>
               </div>
             </div>
           ))}

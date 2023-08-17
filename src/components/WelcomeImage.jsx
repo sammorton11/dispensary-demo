@@ -15,7 +15,7 @@ export default function WelcomeImage() {
                 height: "575px",
             }}
         >
-            <div className="absolute bottom-0 px-6 sm:px-16 py-7 bg-gray-700/50 w-full">
+            <div className="font-faunaone absolute bottom-0 px-6 sm:px-16 py-7 bg-gray-700/50 w-full">
                 <h1 className="text-green-200 font-semibold text-4xl sm:text-6xl">
                     GreenLeaf Grove
                 </h1>

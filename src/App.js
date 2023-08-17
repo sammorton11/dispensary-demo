@@ -5,6 +5,7 @@ import AgeVerifyModal from './components/AgeVerifyModal';
 import Contact from './components/Contact.jsx';
 import Gallery from './components/Gallery.jsx';
 import WelcomeImage from './components/WelcomeImage.jsx';
+import Footer from './components/Footer';
 
 function App() {
     const ageVerified = localStorage.getItem('ageVerified') === 'true';
@@ -22,11 +23,11 @@ function App() {
             {showModal && (
                 <AgeVerifyModal onSuccess={handleModalSuccess} onClose={handleModalClose}/>
             )}
-            <AgeVerifyModal onSuccess={handleModalSuccess} onClose={handleModalClose}/>
             <WelcomeImage />
             <About />
             <Gallery />
             <Contact />
+            <Footer/>
         </>
     );
 }
