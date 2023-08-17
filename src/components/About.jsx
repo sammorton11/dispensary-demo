@@ -3,8 +3,8 @@ import ShopButton from "./ShopButton";
 
 export default function About() {
     return (
-        <section className="px-5 md:px-10 m-5 md:m-10 ">
-            <div className="flex flex-col lg:flex-row items-center space-x-0 md:space-x-6 py-5 m-10">
+        <section className="container mx-auto px-5 md:px-10 m-5 sm:m-5 md:m-5 ">
+            <div className="flex flex-col md:flex-col lg:flex-row items-center space-x-0 md:space-x-6 py-5 m-10">
                 <img
                     className="animate-slideIn opacity-0 rounded w-full md:w-100 lg:w-[640px] h-auto md:h-[500px] mb-5 md:mb-0 mt-10"
                     src="https://www.mlive.com/resizer/y7UMyqnsEhNmZU3aMJTzhTCYa4w=/1280x0/smart/cloudfront-us-east-1.images.arcpublishing.com/advancelocal/NGO66ITQ7RGQ5NWD642RUUSOJQ.JPG"
