@@ -13,11 +13,11 @@ export default function Footer() {
                     <li className="text-lg">(405) 123-4567</li>
                 </ul>
                 <div className="mt-5">
-                    <a href="#" className="text-gray-300 hover:text-white transition duration-300">
+                    <a href="/" className="text-gray-300 hover:text-white transition duration-300">
                         Privacy Policy
                     </a>
                     <span className="mx-2 text-gray-300">|</span>
-                    <a href="#" className="text-gray-300 hover:text-white transition duration-300">
+                    <a href="/" className="text-gray-300 hover:text-white transition duration-300">
                         Terms of Service
                     </a>
                 </div>
