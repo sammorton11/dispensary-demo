@@ -33,7 +33,7 @@ export default function Contact() {
                     <iframe
                         className="w-full h-full md:absolute"
                         title="map"
-                        src="https://www.google.com/maps/embed/v1/place?q=Abide+Cannabis+Company,+801+S+Kelly+Ave,+Edmond,+OK+73003,+USA&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+                        src="https://www.google.com/maps/embed/v1/place?q=Herban+Apothecary+Dispensary,+East+15th+Street,+Edmond,+OK,+USA&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
                         allowFullScreen
                     />
                 </div>
