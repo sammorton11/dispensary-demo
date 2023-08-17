@@ -17,7 +17,7 @@ export default function About() {
                     <div className="font-faunaone text-green-200 text-3xl md:text-4xl mb-3 md:mb-5 py-3">
                         About
                     </div>
-                    <p className="font-faunaone text-green-200 text-base md:text-lg md:w-[775px]">
+                    <p className="font-faunaone text-green-200 text-base md:text-lg md:w-[675px]">
                         Step into our modern and inviting dispensary, conveniently located
                         in the heart of the city. Explore our carefully designed space,
                         where aesthetics meet functionality, creating a seamless shopping
@@ -25,7 +25,7 @@ export default function About() {
                         relief, GreenLeaf Grove is here to guide you on your cannabis
                         journey.
                     </p>
-                    <p className="font-faunaone text-green-200 text-base md:text-lg py-3 md:py-5 md:w-[775px]">
+                    <p className="font-faunaone text-green-200 text-base md:text-lg py-3 md:py-5 md:w-[675px]">
                         Embrace the world of cannabis at GreenLeaf Grove – where premium
                         products, expert guidance, and a thriving community come together
                         to elevate your experience. Explore our online store or visit our
