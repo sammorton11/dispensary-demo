@@ -20,7 +20,7 @@ export default function NavBar() {
             <div className='text-green-100 text-xl md:px-20'>CALL-NOW: 405-234-1234</div>
             <a
               href="#contact"
-              className="text-green-200 inline-flex items-center bg-gray-700 border-0 p-3 px-10 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0" target="_blank" rel="noopener noreferrer">
+              className="text-green-200 inline-flex items-center bg-gray-700 border-0 p-3 px-10 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">
                CONTACT
             </a>
           </div>
