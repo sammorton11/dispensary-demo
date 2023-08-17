@@ -1,4 +1,5 @@
 import React from "react";
+import ShopButton from "./ShopButton";
 
 export default function About() {
     return (
@@ -12,11 +13,11 @@ export default function About() {
                         "--delay": 1 * 0.25 + "s",
                     }}
                 />
-                <div className="p-10">
-                    <div className="text-green-200 text-3xl md:text-4xl mb-3 md:mb-5 py-3">
+                <div className="p-5">
+                    <div className="font-faunaone text-green-200 text-3xl md:text-4xl mb-3 md:mb-5 py-3">
                         About
                     </div>
-                    <p className="text-green-200 text-base md:text-lg">
+                    <p className="font-faunaone text-green-200 text-base md:text-lg md:w-[775px]">
                         Step into our modern and inviting dispensary, conveniently located
                         in the heart of the city. Explore our carefully designed space,
                         where aesthetics meet functionality, creating a seamless shopping
@@ -24,20 +25,13 @@ export default function About() {
                         relief, GreenLeaf Grove is here to guide you on your cannabis
                         journey.
                     </p>
-                    <p className="text-green-200 text-base md:text-lg py-3 md:py-5">
+                    <p className="font-faunaone text-green-200 text-base md:text-lg py-3 md:py-5 md:w-[775px]">
                         Embrace the world of cannabis at GreenLeaf Grove – where premium
                         products, expert guidance, and a thriving community come together
                         to elevate your experience. Explore our online store or visit our
                         physical location and embark on a path of discovery and well-being.
                     </p>
-                    <a
-                        className="text-green-200 text-lg inline-flex items-center bg-gray-600 border-0 py-3 mt-5 md:py-5 px-10 md:px-20 focus:outline-none hover:bg-green-600 rounded"
-                        href="https://weedmaps.com/dispensaries/capital-dank-edmond"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        SHOP NOW
-                    </a>
+                    <ShopButton/>
                 </div>
             </div>
         </section>
